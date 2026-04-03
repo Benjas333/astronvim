@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {}
 
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
@@ -16,6 +16,68 @@ return {
     highlights = {
       init = { -- this table overrides highlights in all themes
         -- Normal = { bg = "#000000" },
+        Normal = { bg = "none" },
+        SignColumn = { bg = "none" },
+        FoldColumn = { bg = "none" },
+        NormalFloat = { bg = "none" },
+        NormalNC = { bg = "none" },
+        NormalSB = { bg = "none" },
+        FloatBorder = { bg = "none" },
+        FloatTitle = { fg = "#F2F3F5", bg = "none" },
+        -- WinBar
+        WinBar = { bg = "none" },
+        WinSeparator = { fg = "#F2F3F5", bg = "none" },
+        WinBarNC = { bg = "none" },
+        WhichKeyFloat = { bg = "none" },
+        -- Telescope
+        TelescopeBorder = { bg = "none" },
+        TelescopePromptTitle = { bg = "none" },
+        TelescopePromptBorder = { bg = "none" },
+        TelescopeNormal = { bg = "none" },
+        -- Diagnosis
+        DiagnositcVirtualTextHint = { fg = "#F2F3F5", bg = "none" },
+        DiagnosticVirtualTextWarn = { fg = "#e0af68", bg = "none" },
+        DiagnosticVirtualTextInfo = { fg = "#9ece6a", bg = "none" },
+        DiagnosticVirtualTextError = { fg = "#bd2c00", bg = "none" },
+        -- NeoTree
+        NeoTreeNormal = { bg = "none" },
+        NeoTreeNormalNC = { bg = "none" },
+        NeoTreeCursorLine = { fg = "#5EB7FF", bg = "#181818" },
+        NeoTreeTabInactive = { bg = "none" },
+        NeoTreeTabSeparatorActive = { bg = "none" },
+        NeoTreeTabSeparatorInactive = { bg = "none" },
+        NvimTreeTabSeparatorActive = { fg = "#F2F3F5", bg = "none" },
+        NvimTreeTabSeparatorInactive = { fg = "#F2F3F5", bg = "none" },
+        MiniTabLineFill = { fg = "#F2F3F5", bg = "none" },
+        -- Spectre
+        DiffChange = { fg = "#F2F3F5", bg = "none" },
+        DiffDelete = { fg = "#F2F3F5", bg = "none" },
+        -- QuickFixline
+        QuickFixline = { bg = "none" },
+        -- TabLine
+        TabLine = { bg = "none" },
+        TabLineSel = { bg = "none" },
+        TabLineFill = { bg = "none" },
+        -- Search
+        Search = { fg = "red" },
+        IncSearch = { fg = "red" },
+        -- Pmenu
+        Pmenu = { bg = "none" },
+        PmenuSel = { bg = "none" },
+        PmenuSbar = { bg = "none" },
+        PmenuThumb = { bg = "none" },
+        -- Notifications
+        NotifyINFOBody = { bg = "none" },
+        NotifyWARNBody = { bg = "none" },
+        NotifyERRORBody = { bg = "none" },
+        NotifyDEBUGBody = { bg = "none" },
+        NotifyTRACEBody = { bg = "none" },
+        NotifyINFOBorder = { bg = "none" },
+        NotifyWARNBorder = { bg = "none" },
+        NotifyERRORBorder = { bg = "none" },
+        NotifyDEBUGBorder = { bg = "none" },
+        NotifyTRACEBorder = { bg = "none" },
+        NotifyBackground = { bg = "#000000" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },
