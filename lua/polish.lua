@@ -3,13 +3,6 @@
 -- This will run last in the setup process.
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
-local restore_cursor_augroup = vim.api.nvim_create_augroup("restore_cursor_shape_on_exit", { clear = true })
-
-vim.api.nvim_create_autocmd({ "VimLeave" }, {
-  group = restore_cursor_augroup,
-  desc = "restore the cursor shape on exit of neovim",
-  command = "set guicursor=a:ver20",
-})
 
 -- GitHub Actions LSP
 vim.filetype.add {
