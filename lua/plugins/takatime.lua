@@ -2,7 +2,7 @@
 return {
   "Rtarun3606k/TakaTime",
   -- "Benjas333/TakaTime",
-  -- branch = "fix-win-ext",
+  -- branch = "add-binary-enum",
   lazy = false,
   opts = {},
 }
