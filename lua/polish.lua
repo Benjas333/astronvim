@@ -91,3 +91,6 @@ vim.lsp.enable "actionsls"
 
 -- Nushell LSP
 vim.lsp.enable "nushell"
+
+-- Treesitter env variable
+vim.fn.setenv("CC", "clang")
