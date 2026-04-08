@@ -50,8 +50,9 @@ return {
         NvimTreeTabSeparatorInactive = { fg = "#F2F3F5", bg = "none" },
         MiniTabLineFill = { fg = "#F2F3F5", bg = "none" },
         -- Spectre
-        DiffChange = { fg = "#F2F3F5", bg = "none" },
-        DiffDelete = { fg = "#F2F3F5", bg = "none" },
+        -- DiffAdd = { fg = "#9ece6a", bg = "none" },
+        -- DiffChange = { fg = "#5EB7FF", bg = "none" },
+        -- DiffDelete = { fg = "#bd2c00", bg = "none" },
         -- QuickFixline
         QuickFixline = { bg = "none" },
         -- TabLine
