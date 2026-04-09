@@ -11,7 +11,7 @@ return {
 
   { import = "astrocommunity.colorscheme.bluloco-nvim" },
 
-  { import = "astrocommunity.media.codesnap-nvim" },
+  -- { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.media.neocord-nvim" },
   -- { import = "astrocommunity.media.pets-nvim" },
 
@@ -36,6 +36,7 @@ return {
 
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
+
   { import = "astrocommunity.workflow.hardtime-nvim" },
   { import = "astrocommunity.workflow.precognition-nvim" },
 }
