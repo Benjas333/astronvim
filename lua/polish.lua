@@ -4,12 +4,15 @@
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
--- Configure Pyright
-vim.lsp.config("pyright", {
+-- Configure basedpyright
+vim.lsp.config("basedpyright", {
   settings = {
-    python = {
+    basedpyright = {
       analysis = {
-        typeCheckingMode = "standard",
+        diagnosticSeverityOverrides = {
+          reportAny = false,
+          reportExplicitAny = false,
+        },
       },
     },
   },
