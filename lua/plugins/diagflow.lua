@@ -1,6 +1,7 @@
 ---@type LazySpec
 return {
   "dgagn/diagflow.nvim",
+  enabled = false,
   opts = {
     scope = "line",
     show_sign = false,
