@@ -18,7 +18,7 @@ vim.lsp.config("basedpyright", {
   },
 })
 
--- Trigger :GuessIndent on LSP load
+-- Trigger :GuessIndent on LSP load and on AstroFormat
 local augroup = vim.api.nvim_create_augroup("UserGuessIndent", { clear = true })
 local function reload_indentation() require("guess-indent").set_from_buffer(nil, nil, true) end
 
