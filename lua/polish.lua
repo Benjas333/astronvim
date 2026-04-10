@@ -4,6 +4,17 @@
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
+-- Configure Pyright
+vim.lsp.config("pyright", {
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "standard",
+      },
+    },
+  },
+})
+
 -- Trigger :GuessIndent on LSP load
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function() require("guess-indent").set_from_buffer(nil, nil, true) end,
@@ -93,9 +104,6 @@ vim.lsp.config("actionsls", {
   },
 })
 vim.lsp.enable "actionsls"
-
--- Nushell LSP
--- vim.lsp.enable "nushell"
 
 -- Treesitter env variable
 vim.fn.setenv("CC", "clang")
