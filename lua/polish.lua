@@ -4,6 +4,11 @@
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
 
+-- Trigger :GuessIndent on LSP load
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function() require("guess-indent").set_from_buffer(nil, nil, true) end,
+})
+
 -- GitHub Actions LSP
 vim.filetype.add {
   pattern = {
