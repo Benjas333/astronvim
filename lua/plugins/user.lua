@@ -5,6 +5,18 @@
 ---@type LazySpec
 return {
   -- == Examples of Overriding Plugins ==
+  ---@type LazySpec
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      event_handlers = {
+        {
+          event = "neo_tree_buffer_enter",
+          handler = function() vim.cmd [[setlocal relativenumber]] end,
+        },
+      },
+    },
+  },
 
   -- customize dashboard options
   {
