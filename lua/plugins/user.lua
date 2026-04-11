@@ -9,12 +9,38 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
+      default_component_configs = {
+        indent = {
+          indent_size = 3,
+          padding = 0,
+        },
+      },
+      window = {
+        position = "right",
+        width = 40,
+      },
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_hidden = false,
+        },
+      },
       event_handlers = {
         {
           event = "neo_tree_buffer_enter",
           handler = function() vim.cmd [[setlocal relativenumber]] end,
         },
       },
+    },
+  },
+
+  ---@type LazySpec
+  {
+    "akinsho/toggleterm.nvim",
+    opts = {
+      -- shade_terminals = false,
+      persist_size = true,
+      shell = "nu",
     },
   },
 
