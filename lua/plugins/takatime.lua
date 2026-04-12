@@ -1,8 +1,7 @@
 ---@type LazySpec
 return {
   "Rtarun3606k/TakaTime",
-  -- "Benjas333/TakaTime",
-  -- branch = "add-binary-enum",
+  -- branch = "fix/deprecated-function",
   lazy = false,
   opts = {},
 }
