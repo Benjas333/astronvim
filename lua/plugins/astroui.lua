@@ -29,6 +29,8 @@ return {
         CursorLineNr = { fg = "#C8C8C8" },
         LspInlayHint = { fg = "#7D7D7D" },
         Comment = { fg = "#7D7D7D" },
+        -- Visual = { bg = "#4C687E" },
+        Visual = { bg = "#394E5F" },
         -- WinBar
         WinBar = { bg = "none" },
         WinSeparator = { fg = "#F2F3F5", bg = "none" },
