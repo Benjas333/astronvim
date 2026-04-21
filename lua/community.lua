@@ -9,7 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   -- import/override with your plugins folder
 
-  { import = "astrocommunity.colorscheme.bluloco-nvim" },
+  -- { import = "astrocommunity.colorscheme.bluloco-nvim" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },
