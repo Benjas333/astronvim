@@ -24,19 +24,20 @@ return {
     --   virtual_text = true,
     --   underline = true,
     -- },
-    -- -- passed to `vim.filetype.add`
-    -- filetypes = {
-    --   -- see `:h vim.filetype.add` for usage
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     [".foorc"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     [".*/etc/foo/.*"] = "fooscript",
-    --   },
-    -- },
+    -- passed to `vim.filetype.add`
+    filetypes = {
+      -- see `:h vim.filetype.add` for usage
+      -- extension = {
+      --   foo = "fooscript",
+      -- },
+      -- filename = {
+      --   [".foorc"] = "fooscript",
+      -- },
+      pattern = {
+        -- [".*/etc/foo/.*"] = "fooscript",
+        [".*/%.github/workflows/.*%.ya?ml"] = "yaml.ghactions",
+      },
+    },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
@@ -52,6 +53,7 @@ return {
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        rust_recommended_style = false,
       },
     },
     -- Mappings can be configured through AstroCore as well.

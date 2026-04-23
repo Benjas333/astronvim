@@ -9,9 +9,9 @@ return {
   "AstroNvim/astrocommunity",
   -- import/override with your plugins folder
 
+  { import = "astrocommunity.colorscheme" },
   -- { import = "astrocommunity.colorscheme.bluloco-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },
@@ -20,7 +20,7 @@ return {
   { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.cs-omnisharp" },
-  { import = "astrocommunity.pack.eslint" },
+  -- { import = "astrocommunity.pack.eslint" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.just" },
@@ -33,7 +33,8 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.toml" },
-  { import = "astrocommunity.pack.typescript-all-in-one" },
+  -- { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
 
   { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },

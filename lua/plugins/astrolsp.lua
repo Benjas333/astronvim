@@ -41,11 +41,24 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "actionsls",
+      "eslint",
     },
     -- customize language server configuration passed to `vim.lsp.config`
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
     config = {
       -- ["*"] = { capabilities = {} }, -- modify default LSP client settings such as capabilities
+      -- eslint = {
+      --   settings = {
+      --     experimental = {
+      --       useFlatConfig = true,
+      --     },
+      --     -- workingDirectory = {
+      --     --   mode = "location",
+      --     -- },
+      --   },
+      --   -- root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
+      -- },
     },
     -- customize how language servers are attached
     handlers = {
