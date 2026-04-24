@@ -24,7 +24,7 @@ return {
         NormalSB = { bg = "none" },
         FloatBorder = { bg = "none" },
         FloatTitle = { fg = "#F2F3F5", bg = "none" },
-        -- CursorLine = { bg = "#181818" },
+        CursorLine = { bg = "#181818" },
         LineNr = { fg = "#7D7D7D" }, -- #adb0bb
         CursorLineNr = { fg = "#C8C8C8" },
         LspInlayHint = { fg = "#7D7D7D" },
