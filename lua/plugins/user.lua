@@ -74,4 +74,27 @@ return {
       },
     },
   },
+
+  {
+    "AstroNvim/astrolsp",
+    config = function(plugin, opts)
+      require("astrolsp").setup(opts)
+
+      local disabled_roots = {
+        [vim.fs.normalize "D:/VisualStudioCode/"] = true,
+        [vim.fs.normalize "C:/Users/sesto/Documents/Vencord/"] = true,
+      }
+
+      vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+        callback = function(args)
+          local buf = args.buf
+          local name = vim.api.nvim_buf_get_name(buf)
+          if name == "" then return end
+
+          local cwd = vim.fs.normalize(vim.fn.getcwd(-1, -1))
+          if disabled_roots[cwd] and vim.b[buf].autoformat == nil then vim.b[buf].autoformat = false end
+        end,
+      })
+    end,
+  },
 }
