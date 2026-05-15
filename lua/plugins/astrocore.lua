@@ -5,6 +5,18 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+---Places the cursor line at specified fraction of the screen. TODO: improve this to detect codelens extra lines lol
+---@param fraction number
+local function place_line_at_fraction(fraction)
+  local height = vim.api.nvim_win_get_height(0) - 2
+  local target_row = math.max(1, math.floor(height * fraction + 0.5))
+
+  local current_line = vim.fn.line "."
+  local topline = math.max(1, current_line - target_row + 1)
+
+  vim.fn.winrestview { topline = topline }
+end
+
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
@@ -80,6 +92,16 @@ return {
         ["<Leader>N"] = {
           function() require("snacks").notifier.show_history() end,
           desc = "Show Notifications History",
+        },
+
+        ["zh"] = {
+          function() place_line_at_fraction(0.25) end,
+          desc = "1/4 screen",
+        },
+
+        ["zl"] = {
+          function() place_line_at_fraction(0.75) end,
+          desc = "3/4 screen",
         },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
