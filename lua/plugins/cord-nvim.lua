@@ -2,6 +2,8 @@
 return {
   "vyfor/cord.nvim",
   event = "VeryLazy",
+  ---@module "cord"
+  ---@type CordConfig
   opts = {
     editor = {
       client = "astronvim",

@@ -86,6 +86,8 @@ return {
         NotifyDEBUGBorder = { bg = "none" },
         NotifyTRACEBorder = { bg = "none" },
         NotifyBackground = { bg = "#000000" },
+        -- Trouble
+        TroubleNormal = { bg = "none" },
       },
       astrodark = { -- a table of overrides/changes when applying the astrotheme theme
         -- Normal = { bg = "#000000" },

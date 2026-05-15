@@ -13,6 +13,35 @@ return {
   -- { import = "astrocommunity.colorscheme.bluloco-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
 
+  { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
+  {
+    "rachartier/tiny-inline-diagnostic.nvim",
+    opts = {
+      options = {
+        multilines = {
+          enabled = true,
+        },
+        show_source = {
+          enabled = true,
+        },
+      },
+    },
+  },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  {
+    "foke/trouble.nvim",
+    ---@module "trouble"
+    ---@type trouble.Config
+    opts = {
+      ---@type trouble.Window.opts
+      win = {
+        type = "split",
+        position = "right",
+        size = 40,
+      },
+    },
+  },
+
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },
   -- { import = "astrocommunity.media.pets-nvim" },
@@ -37,7 +66,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
 
-  { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
+  -- { import = "astrocommunity.recipes.diagnostic-virtual-lines-current-line" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.recipes.picker-lsp-mappings" },
 

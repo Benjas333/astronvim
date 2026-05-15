@@ -29,5 +29,7 @@ return {
     },
   },
   lazy = false,
+  ---@module "refactoring"
+  ---@type refactor.UserConfig
   opts = {},
 }
