@@ -1,7 +1,7 @@
 {
   "AstroNvim": { "branch": "main", "commit": "c399f7f46daa010db1b70f6f7062a6a85216e1de" },
   "LuaSnip": { "branch": "master", "commit": "642b0c595e11608b4c18219e93b88d7637af27bc" },
-  "TakaTime": { "branch": "main", "commit": "40484b8827e31ee92797c1db50e6284fab278c98" },
+  "TakaTime": { "branch": "main", "commit": "0bd7fa09a1e6d7d5c71e589c22aff184a4383b0b" },
   "aerial.nvim": { "branch": "master", "commit": "645d108a5242ec7b378cbe643eb6d04d4223f034" },
   "alabaster.nvim": { "branch": "main", "commit": "b902c73fabefc13583bfc0c18b28950ea8f6244f" },
   "astrocommunity": { "branch": "main", "commit": "b2d0afe447eb61f3d648d2c55873f93e1e0b6f4a" },
@@ -107,7 +107,7 @@
   "resession.nvim": { "branch": "master", "commit": "cc819b0489938d03e4f3532a583354f0287c015b" },
   "rose-pine": { "branch": "main", "commit": "6a961effd67f6130d36df6d1c05c48c739796dd2" },
   "rustaceanvim": { "branch": "main", "commit": "a60811ae6054ba981cb4693aaecd715dea783327" },
-  "schemastore.nvim": { "branch": "main", "commit": "5b319663792e537f0f6f36b449e6cb86da6b0f7f" },
+  "schemastore.nvim": { "branch": "main", "commit": "1c28767e3a7f3c9b7c5cc66e7f16b268c964e2c9" },
   "smart-splits.nvim": { "branch": "master", "commit": "0bd02161ee5c5378bf4133fcedf53d1fc4179e1d" },
   "snacks.nvim": { "branch": "main", "commit": "e6fd58c82f2f3fcddd3fe81703d47d6d48fc7b9f" },
   "solarized-osaka.nvim": { "branch": "main", "commit": "f675d9a5c58f3b0d6158d665a623f81a62e7bdaf" },
