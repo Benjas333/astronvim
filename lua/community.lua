@@ -29,7 +29,7 @@ return {
   },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   {
-    "foke/trouble.nvim",
+    "folke/trouble.nvim",
     ---@module "trouble"
     ---@type trouble.Config
     opts = {
