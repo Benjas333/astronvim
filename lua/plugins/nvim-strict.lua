@@ -14,6 +14,7 @@ return {
       split_on_save = false,
     },
     tab_indentation = {
+      highlight = false,
       convert_on_save = false,
     },
     todos = {

@@ -60,6 +60,7 @@ return {
         wrap = true, -- sets vim.opt.wrap
         -- shiftwidth = 8,
         tabstop = 8,
+        list = true,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -92,6 +93,11 @@ return {
         ["<Leader>N"] = {
           function() require("snacks").notifier.show_history() end,
           desc = "Show Notifications History",
+        },
+
+        ["<Leader>u°"] = {
+          ":set list!<CR>",
+          desc = "Toggle invisible chars",
         },
 
         ["zh"] = {
