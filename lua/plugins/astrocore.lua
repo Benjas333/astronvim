@@ -61,6 +61,8 @@ return {
         -- shiftwidth = 8,
         tabstop = 8,
         list = true,
+        exrc = true,
+        secure = true,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
