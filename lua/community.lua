@@ -53,6 +53,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.just" },
+  { import = "astrocommunity.pack.kotlin" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.nushell" },
