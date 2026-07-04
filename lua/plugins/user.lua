@@ -92,7 +92,9 @@ return {
           if name == "" then return end
 
           local cwd = vim.fs.normalize(vim.fn.getcwd(-1, -1))
-          if disabled_roots[cwd] and vim.b[buf].autoformat == nil then vim.b[buf].autoformat = false end
+          for disabled_root in pairs(disabled_roots) do
+            if cwd:find(disabled_root, 1, true) and vim.b[buf].autoformat == nil then vim.b[buf].autoformat = false end
+          end
         end,
       })
     end,
