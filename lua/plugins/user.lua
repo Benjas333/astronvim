@@ -50,6 +50,7 @@ return {
   -- customize dashboard options
   {
     "folke/snacks.nvim",
+    ---@type snacks.Config
     opts = {
       dashboard = {
         preset = {
@@ -71,6 +72,9 @@ return {
             "███   ███████████   ",
           }, "\n"),
         },
+      },
+      indent = {
+        enabled = false,
       },
     },
   },
