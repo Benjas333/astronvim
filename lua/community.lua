@@ -42,6 +42,11 @@ return {
     },
   },
 
+  { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  { import = "astrocommunity.editing-support.vim-move" },
+
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },
   -- { import = "astrocommunity.media.pets-nvim" },
