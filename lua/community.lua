@@ -14,6 +14,7 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
 
   { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
+  ---@type LazySpec
   {
     "rachartier/tiny-inline-diagnostic.nvim",
     opts = {
@@ -28,6 +29,7 @@ return {
     },
   },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  ---@type LazySpec
   {
     "folke/trouble.nvim",
     ---@module "trouble"
@@ -84,5 +86,12 @@ return {
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 
   { import = "astrocommunity.workflow.hardtime-nvim" },
+  ---@type LazySpec
+  {
+    "m4xshen/hardtime.nvim",
+    opts = {
+      disable_mouse = false,
+    },
+  },
   { import = "astrocommunity.workflow.precognition-nvim" },
 }
