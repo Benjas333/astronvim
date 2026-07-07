@@ -67,6 +67,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.nushell" },
+  { import = "astrocommunity.pack.oxlint" },
   { import = "astrocommunity.pack.ps1" },
   { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.python.ruff" },
