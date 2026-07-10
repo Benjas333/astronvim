@@ -1,12 +1,13 @@
-if true then return {} end
+local utils = require "utils"
 
 local prefix = "<Leader>c"
 
 ---@type LazySpec
 return {
   "mistricky/codesnap.nvim",
-  tag = "v2.0.1",
+  -- tag = "v2.0.1",
   -- build = "make",
+  enabled = utils.os.name == "linux",
   cmd = {
     "CodeSnap",
     "CodeSnapSave",

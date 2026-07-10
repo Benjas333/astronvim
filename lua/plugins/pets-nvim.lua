@@ -1,3 +1,5 @@
+local utils = require "utils"
+
 ---@type LazySpec
 return {
   "giusgad/pets.nvim",
@@ -6,5 +8,5 @@ return {
     "giusgad/hologram.nvim",
   },
   opts = {},
-  enabled = false,
+  enabled = utils.os.name == "linux",
 }
