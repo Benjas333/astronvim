@@ -1,3 +1,4 @@
+local utils = require "utils"
 -- if true then return {} end
 
 -- AstroCommunity: import any community modules here
@@ -14,7 +15,6 @@ return {
   -- { import = "astrocommunity.colorscheme.catppuccin" },
 
   { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
-  ---@type LazySpec
   {
     "rachartier/tiny-inline-diagnostic.nvim",
     opts = {
@@ -29,7 +29,6 @@ return {
     },
   },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  ---@type LazySpec
   {
     "folke/trouble.nvim",
     ---@module "trouble"
@@ -47,6 +46,12 @@ return {
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    opts = {
+      highlight = utils.highlight,
+    },
+  },
   { import = "astrocommunity.editing-support.vim-move" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
@@ -87,7 +92,6 @@ return {
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 
   { import = "astrocommunity.workflow.hardtime-nvim" },
-  ---@type LazySpec
   {
     "m4xshen/hardtime.nvim",
     opts = {
