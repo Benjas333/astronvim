@@ -52,6 +52,7 @@ return {
       highlight = utils.highlight,
     },
   },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
