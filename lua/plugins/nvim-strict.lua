@@ -13,6 +13,12 @@ return {
       length_limit = 125,
       split_on_save = false,
     },
+    trailing_whitespace = {
+      remove_on_save = false,
+    },
+    trailing_empty_lines = {
+      remove_on_save = false,
+    },
     tab_indentation = {
       highlight = false,
       convert_on_save = false,
