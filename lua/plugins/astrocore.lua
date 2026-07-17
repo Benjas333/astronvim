@@ -106,7 +106,6 @@ return {
           function() place_line_at_fraction(0.25) end,
           desc = "1/4 screen",
         },
-
         ["zl"] = {
           function() place_line_at_fraction(0.75) end,
           desc = "3/4 screen",
@@ -118,6 +117,15 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        ["<Leader>th"] = {
+          "<Cmd>ToggleTerm direction=horizontal<CR>",
+          desc = "ToggleTerm horizontal split",
+        },
+        ["<Leader>tv"] = {
+          "<Cmd>ToggleTerm direction=vertical<CR>",
+          desc = "ToggleTerm vertical split",
+        },
       },
     },
   },

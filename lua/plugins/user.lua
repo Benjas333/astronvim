@@ -41,6 +41,13 @@ return {
   {
     "akinsho/toggleterm.nvim",
     opts = {
+      size = function(term)
+        if term.direction == "horizontal" then
+          return 17
+        elseif term.direction == "vertical" then
+          return 80
+        end
+      end,
       -- shade_terminals = false,
       persist_size = true,
       shell = "nu",
