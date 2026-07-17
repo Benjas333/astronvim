@@ -1,9 +1,9 @@
 ---@type LazySpec
 return {
-  -- "emileferreira/nvim-strict",
+  "emileferreira/nvim-strict",
   -- commit = "cba2f989b66edd04181247f5cc25dcf36d556a80",
-  "Benjas333/nvim-strict",
-  branch = "fix/tab-deep-nesting",
+  -- "Benjas333/nvim-strict",
+  -- branch = "fix/tab-deep-nesting",
   opts = {
     deep_nesting = {
       -- highlight_group = "Substitute",

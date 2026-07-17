@@ -1,7 +1,7 @@
 {
   "AstroNvim": { "branch": "main", "commit": "35966a16caefeb8f3a9dcb1a91f89ada8f3edc77" },
   "LuaSnip": { "branch": "master", "commit": "642b0c595e11608b4c18219e93b88d7637af27bc" },
-  "TakaTime": { "branch": "main", "commit": "a166e97cce8983f6271dc0a7d71d75d4cdbd6aa9" },
+  "TakaTime": { "branch": "main", "commit": "92bd01b93458d78c85b112dbeb0b189dd21d9082" },
   "aerial.nvim": { "branch": "master", "commit": "645d108a5242ec7b378cbe643eb6d04d4223f034" },
   "alabaster.nvim": { "branch": "main", "commit": "b902c73fabefc13583bfc0c18b28950ea8f6244f" },
   "astrocommunity": { "branch": "main", "commit": "ac92a365ce2e9f7ab8c4c25070e8b429e3875096" },
@@ -93,7 +93,7 @@
   "nvim-lspconfig": { "branch": "master", "commit": "229b79051b380377664edc4cbd534930154921a1" },
   "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },
   "nvim-scrollbar": { "branch": "main", "commit": "f8e87b96cd6362ef8579be456afee3b38fd7e2a8" },
-  "nvim-strict": { "branch": "fix/tab-deep-nesting", "commit": "6d921447eb06f5f83007b94d4968831f45194bf3" },
+  "nvim-strict": { "branch": "main", "commit": "84979679976fcad35ffdd61eb8af8d8bf790f45d" },
   "nvim-surround": { "branch": "main", "commit": "2e93e154de9ff326def6480a4358bfc149d5da2c" },
   "nvim-training": { "branch": "main", "commit": "ab38d312d277fc8e1a123dd7c3b41e710f56e331" },
   "nvim-treesitter": { "branch": "main", "commit": "4916d6592ede8c07973490d9322f187e07dfefac" },
