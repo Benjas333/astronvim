@@ -127,6 +127,9 @@ return {
           desc = "ToggleTerm vertical split",
         },
       },
+      t = {
+        ["<esc>"] = [[<C-\><C-n>]],
+      },
     },
   },
 }
