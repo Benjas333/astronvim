@@ -63,6 +63,7 @@ return {
         list = true,
         exrc = true,
         secure = true,
+        formatoptions = "jcq",
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
