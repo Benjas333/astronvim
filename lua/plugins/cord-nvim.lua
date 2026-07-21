@@ -19,5 +19,12 @@ return {
     text = {
       workspace = function(opts) return "Working on " .. opts.workspace end,
     },
+    advanced = {
+      discord = {
+        reconnect = {
+          enabled = true,
+        },
+      },
+    },
   },
 }
