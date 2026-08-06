@@ -131,6 +131,14 @@ return {
       t = {
         ["<esc>"] = [[<C-\><C-n>]],
       },
+
+      x = {
+        ["<Leader>("] = {
+          "gb",
+          remap = true,
+          desc = "Toggle comment block",
+        },
+      },
     },
   },
 }
