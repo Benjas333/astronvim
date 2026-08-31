@@ -13,6 +13,10 @@ return {
   { import = "astrocommunity.colorscheme" },
   -- { import = "astrocommunity.colorscheme.bluloco-nvim" },
   -- { import = "astrocommunity.colorscheme.catppuccin" },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+    enabled = false,
+  },
 
   { import = "astrocommunity.diagnostics.tiny-inline-diagnostic-nvim" },
   {
