@@ -128,9 +128,6 @@ return {
           desc = "ToggleTerm vertical split",
         },
       },
-      t = {
-        ["jk"] = [[<C-\><C-n>]],
-      },
 
       x = {
         ["<Leader>("] = {

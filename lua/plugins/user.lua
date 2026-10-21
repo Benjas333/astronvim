@@ -111,4 +111,32 @@ return {
       })
     end,
   },
+
+  {
+    "max397574/better-escape.nvim",
+    opts = {
+      mappings = {
+        c = {
+          j = {
+            k = "<C-c>",
+            j = "<C-c>",
+          },
+        },
+        t = {
+          j = {
+            k = [[<C-\><C-n>]],
+          },
+        },
+      },
+    },
+  },
+
+  {
+    "folke/which-key.nvim",
+    opts = {
+      win = {
+        no_overlap = false,
+      },
+    },
+  },
 }
