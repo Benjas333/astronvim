@@ -119,6 +119,11 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
 
+        ["<Leader>gd"] = {
+          function() require("diffview").toggle {} end,
+          desc = "Toggle Diffview",
+        },
+
         ["<Leader>th"] = {
           "<Cmd>ToggleTerm direction=horizontal<CR>",
           desc = "ToggleTerm horizontal split",

@@ -47,6 +47,7 @@ return {
     },
   },
 
+  { import = "astrocommunity.editing-support.camouflage-nvim" },
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
@@ -58,6 +59,9 @@ return {
   },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.vim-move" },
+
+  { import = "astrocommunity.git.diffview-plus-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },

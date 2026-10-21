@@ -1,3 +1,4 @@
+local astrocore = require "astrocore"
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
@@ -137,6 +138,20 @@ return {
       win = {
         no_overlap = false,
       },
+    },
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = {
+      word_diff = true,
+      on_attach = function(bufnr)
+        local prefix, maps = "<Leader>g", astrocore.empty_map_table()
+
+        maps.n[prefix .. "d"] = { function() require("diffview").toggle {} end, desc = "Toggle Diffview" }
+
+        astrocore.set_mappings(maps, { buffer = bufnr })
+      end,
     },
   },
 }
