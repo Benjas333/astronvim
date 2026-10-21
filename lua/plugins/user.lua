@@ -48,7 +48,8 @@ return {
           return 80
         end
       end,
-      -- shade_terminals = false,
+      shade_terminals = false,
+      shading_factor = 0,
       persist_size = true,
       shell = "nu",
     },
