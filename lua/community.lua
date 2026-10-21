@@ -100,6 +100,8 @@ return {
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
 
+  { import = "astrocommunity.terminal-integration.flatten-nvim" },
+
   { import = "astrocommunity.workflow.hardtime-nvim" },
   {
     "m4xshen/hardtime.nvim",
