@@ -1,4 +1,3 @@
-local astrocore = require "astrocore"
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
@@ -59,33 +58,44 @@ return {
   -- customize dashboard options
   {
     "folke/snacks.nvim",
-    ---@type snacks.Config
-    opts = {
-      dashboard = {
-        preset = {
-          header = table.concat({
-            "███   ███████████   ",
-            "███   █████████████ ",
-            "███             ████",
-            "███             ████",
-            "███             ████",
-            "███             ████",
-            "███         ███████ ",
-            "███   ███████████   ",
-            "███   █████████████ ",
-            "███             ████",
-            "███             ████",
-            "███             ████",
-            "███             ████",
-            "███         ███████ ",
-            "███   ███████████   ",
-          }, "\n"),
+    opts = function(_, opts)
+      local astrocore = require "astrocore"
+
+      local keys = opts.dashboard.preset.keys
+
+      for i = #keys, 1, -1 do
+        if keys[i].key == "s" then keys[i].action = "<Leader>S." end
+      end
+
+      keys[#keys + 1] = { icon = " ", key = "q", desc = "Quit", action = ":qa" }
+
+      opts = astrocore.extend_tbl(opts, {
+        dashboard = {
+          preset = {
+            header = table.concat({
+              "███   ███████████   ",
+              "███   █████████████ ",
+              "███             ████",
+              "███             ████",
+              "███             ████",
+              "███             ████",
+              "███         ███████ ",
+              "███   ███████████   ",
+              "███   █████████████ ",
+              "███             ████",
+              "███             ████",
+              "███             ████",
+              "███             ████",
+              "███         ███████ ",
+              "███   ███████████   ",
+            }, "\n"),
+          },
         },
-      },
-      indent = {
-        enabled = false,
-      },
-    },
+        indent = {
+          enabled = false,
+        },
+      })
+    end,
   },
 
   {
@@ -146,6 +156,7 @@ return {
     opts = {
       word_diff = true,
       on_attach = function(bufnr)
+        local astrocore = require "astrocore"
         local prefix, maps = "<Leader>g", astrocore.empty_map_table()
 
         maps.n[prefix .. "d"] = { function() require("diffview").toggle {} end, desc = "Toggle Diffview" }
