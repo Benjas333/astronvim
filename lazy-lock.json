@@ -73,7 +73,7 @@
   "modus-themes.nvim": { "branch": "master", "commit": "15ffb5ab6a12f72ee1e8393fe5810d5317da2d3e" },
   "monokai-pro.nvim": { "branch": "master", "commit": "a68e38b8e55d69a215d0f02598900a79c356da9d" },
   "moonfly": { "branch": "master", "commit": "2c883835f5b7b380a0a9e80695c420f7efebdfe4" },
-  "multiple-cursors.nvim": { "branch": "main", "commit": "eae76d4c5f7ede2d45746dc2affb5e7a139e4aa8" },
+  "multicursor.nvim": { "branch": "main", "commit": "c574bfc1f7e63dfea3e64b8453c9f7c660127238" },
   "neo-tree.nvim": { "branch": "main", "commit": "f3f3bf73414e400cf9fc13fda50f00404a8f8ab1" },
   "neofusion.nvim": { "branch": "main", "commit": "c8ef24be527be37254bf8981fa3e6216dee4f8d8" },
   "neogen": { "branch": "main", "commit": "23e7e9f883d01289ebd90e98025acc860ea26366" },
