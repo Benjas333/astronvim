@@ -15,8 +15,8 @@ return {
     -- capabilities.codeActionProvider = nil
     -- capabilities.codeLensProvider = nil
     -- capabilities.colorProvider = nil
-    -- capabilities.declarationProvider = nil
-    -- capabilities.definitionProvider = nil
+    capabilities.declarationProvider = nil
+    capabilities.definitionProvider = nil
     capabilities.diagnosticProvider = nil
     -- capabilities.documentFormattingProvider = nil
     -- capabilities.documentHighlightProvider = nil
@@ -27,13 +27,13 @@ return {
     -- capabilities.executeCommandProvider = nil
     -- capabilities.experimental = nil
     -- capabilities.foldingRangeProvider = nil
-    -- capabilities.implementationProvider = nil
+    capabilities.implementationProvider = nil
     -- capabilities.inlineValueProvider = nil
     -- capabilities.linkedEditingRangeProvider = nil
     -- capabilities.monikerProvider = nil
     -- capabilities.notebookDocumentSync = nil
     capabilities.referencesProvider = nil
-    -- capabilities.renameProvider = nil
+    capabilities.renameProvider = nil
     -- capabilities.selectionRangeProvider = nil
     -- capabilities.semanticTokensProvider = nil
     -- capabilities.signatureHelpProvider = nil
