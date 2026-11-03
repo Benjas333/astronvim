@@ -63,7 +63,7 @@ return {
   { import = "astrocommunity.editing-support.vim-move" },
 
   { import = "astrocommunity.git.diffview-plus-nvim" },
-  { import = "astrocommunity.git.git-blame-nvim" },
+  -- { import = "astrocommunity.git.git-blame-nvim" },
 
   -- { import = "astrocommunity.media.codesnap-nvim" },
   -- { import = "astrocommunity.media.cord-nvim" },
