@@ -1,7 +1,9 @@
 ---@type vim.lsp.Config
 return {
   settings = {
-    ty = {},
+    ty = {
+      diagnosticMode = "off",
+    },
   },
   on_init = function(client)
     local capabilities = assert(client.server_capabilities)
@@ -15,7 +17,7 @@ return {
     -- capabilities.colorProvider = nil
     -- capabilities.declarationProvider = nil
     -- capabilities.definitionProvider = nil
-    -- capabilities.diagnosticProvider = nil
+    capabilities.diagnosticProvider = nil
     -- capabilities.documentFormattingProvider = nil
     -- capabilities.documentHighlightProvider = nil
     -- capabilities.documentLinkProvider = nil
@@ -30,7 +32,7 @@ return {
     -- capabilities.linkedEditingRangeProvider = nil
     -- capabilities.monikerProvider = nil
     -- capabilities.notebookDocumentSync = nil
-    -- capabilities.referencesProvider = nil
+    capabilities.referencesProvider = nil
     -- capabilities.renameProvider = nil
     -- capabilities.selectionRangeProvider = nil
     -- capabilities.semanticTokensProvider = nil
