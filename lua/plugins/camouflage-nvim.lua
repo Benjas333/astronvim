@@ -17,11 +17,13 @@ return {
     "CamouflageInit",
     "CamouflageRegisters",
   },
+  ---@module "camouflage.config"
+  ---@type CamouflageConfig
   opts = {},
-  -- keys = {
   dependencies = {
     {
       "AstroNvim/astrocore",
+      ---@type AstroCoreOpts
       opts = {
         mappings = {
           n = {

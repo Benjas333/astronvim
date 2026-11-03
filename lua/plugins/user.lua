@@ -8,6 +8,8 @@ return {
   ---@type LazySpec
   {
     "nvim-neo-tree/neo-tree.nvim",
+    ---@module "neo-tree"
+    ---@type neotree.Config
     opts = {
       default_component_configs = {
         indent = {
@@ -40,7 +42,12 @@ return {
   ---@type LazySpec
   {
     "akinsho/toggleterm.nvim",
+    ---@module "toggleterm"
+    ---@type ToggleTermConfig
+    ---@diagnostic disable: missing-fields
     opts = {
+      ---@param term Terminal
+      ---@type number|function
       size = function(term)
         if term.direction == "horizontal" then
           return 17
@@ -58,6 +65,7 @@ return {
   -- customize dashboard options
   {
     "folke/snacks.nvim",
+    ---@param opts snacks.Config
     opts = function(_, opts)
       local astrocore = require "astrocore"
 
@@ -98,7 +106,8 @@ return {
 
   {
     "AstroNvim/astrolsp",
-    config = function(plugin, opts)
+    ---@param opts AstroLSPOpts
+    config = function(_, opts)
       require("astrolsp").setup(opts)
 
       local disabled_roots = {
@@ -142,6 +151,8 @@ return {
 
   {
     "folke/which-key.nvim",
+    ---@module "which-key"
+    ---@type wk.Opts
     opts = {
       win = {
         no_overlap = false,
@@ -151,6 +162,8 @@ return {
 
   {
     "lewis6991/gitsigns.nvim",
+    ---@module "gitsigns"
+    ---@type Gitsigns.Config
     opts = {
       word_diff = true,
       on_attach = function(bufnr)

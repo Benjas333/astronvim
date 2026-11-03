@@ -17,6 +17,7 @@ return {
   dependencies = {
     {
       "AstroNvim/astrocore",
+      ---@type AstroCoreOpts
       opts = {
         mappings = {
           v = {

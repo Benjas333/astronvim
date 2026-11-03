@@ -5,7 +5,6 @@ local uv = vim.uv or vim.loop
 ---@class OsInfo
 ---@field name "windows"|"linux"|"darwin"
 ---@field arch "amd64"|"arm64"
-local OsInfo = {}
 
 local uname = uv.os_uname()
 local os = uname.sysname

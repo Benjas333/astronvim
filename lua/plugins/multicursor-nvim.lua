@@ -2,12 +2,21 @@
 return {
   "jake-stewart/multicursor.nvim",
   dependencies = {
-    { "AstroNvim/astroui", opts = { icons = { Multicursor = "󰗧" } } },
+    {
+      "AstroNvim/astroui",
+      ---@type AstroUIOpts
+      opts = { icons = { Multicursor = "󰗧" } },
+    },
     {
       "AstroNvim/astrocore",
+      ---@param opts AstroCoreOpts
       opts = function(_, opts)
-        local maps = opts.mappings
         local mc = require "multicursor-nvim"
+        opts.mappings = opts.mappings or {}
+        local maps = opts.mappings
+
+        maps.n = maps.n or {}
+        maps.x = maps.x or {}
 
         for lhs, map in pairs {
           ["<C-LeftMouse>"] = { mc.handleMouse, desc = "Add cursor with mouse" },
@@ -60,5 +69,7 @@ return {
       end,
     },
   },
+  ---@module "multicursor-nvim"
+  ---@type mc.MultiCursorOpts
   opts = {},
 }
