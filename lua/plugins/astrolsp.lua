@@ -59,9 +59,6 @@ return {
       --   },
       --   -- root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
       -- },
-      yamlls = {
-        filetypes = { "yaml", "yaml.docker-compose", "yaml.gitlab", "yaml.ghactions", "yaml.helm-values" },
-      },
     },
     -- customize how language servers are attached
     handlers = {
