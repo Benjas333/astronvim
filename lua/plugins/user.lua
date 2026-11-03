@@ -193,4 +193,50 @@ return {
       end,
     },
   },
+
+  {
+    "saghen/blink.cmp",
+    ---@module "blink.cmp"
+    ---@type blink.cmp.Config
+    opts = {
+      completion = {
+        list = {
+          selection = {
+            -- auto_insert = false,
+          },
+        },
+        menu = {
+          -- auto_show = true,
+          draw = {
+            columns = {
+              { "kind_icon" },
+              { "label", "label_description", gap = 1 },
+              { "source_name" },
+            },
+          },
+        },
+        documentation = {
+          --[[ draw = function(opts)
+            opts.default_implementation()
+          end, ]]
+        },
+        ghost_text = {
+          -- enabled = true,
+        },
+      },
+      cmdline = {
+        completion = {
+          list = {
+            selection = {
+              preselect = false,
+              auto_insert = true,
+            },
+          },
+          menu = {
+            auto_show = true,
+          },
+        },
+      },
+    },
+  },
 }
