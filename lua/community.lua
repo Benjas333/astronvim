@@ -85,6 +85,7 @@ return {
   { import = "astrocommunity.pack.ps1" },
   { import = "astrocommunity.pack.python.base" },
   { import = "astrocommunity.pack.python.ruff" },
+  { import = "astrocommunity.pack.python.ty" },
   { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.svelte" },
