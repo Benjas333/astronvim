@@ -69,31 +69,29 @@ return {
 
       keys[#keys + 1] = { icon = " ", key = "q", desc = "Quit", action = ":qa" }
 
-      opts = astrocore.extend_tbl(opts, {
-        dashboard = {
-          preset = {
-            header = table.concat({
-              "███   ███████████   ",
-              "███   █████████████ ",
-              "███             ████",
-              "███             ████",
-              "███             ████",
-              "███             ████",
-              "███         ███████ ",
-              "███   ███████████   ",
-              "███   █████████████ ",
-              "███             ████",
-              "███             ████",
-              "███             ████",
-              "███             ████",
-              "███         ███████ ",
-              "███   ███████████   ",
-            }, "\n"),
-          },
+      opts.dashboard = astrocore.extend_tbl(opts.dashboard, {
+        preset = {
+          header = table.concat({
+            "███   ███████████   ",
+            "███   █████████████ ",
+            "███             ████",
+            "███             ████",
+            "███             ████",
+            "███             ████",
+            "███         ███████ ",
+            "███   ███████████   ",
+            "███   █████████████ ",
+            "███             ████",
+            "███             ████",
+            "███             ████",
+            "███             ████",
+            "███         ███████ ",
+            "███   ███████████   ",
+          }, "\n"),
         },
-        indent = {
-          enabled = false,
-        },
+      })
+      opts.indent = astrocore.extend_tbl(opts.indent, {
+        enabled = false,
       })
     end,
   },
