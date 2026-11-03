@@ -26,5 +26,16 @@ vim.api.nvim_create_autocmd("User", {
 --   callback = function() vim.opt_local.formatoptions:remove { "t", "a" } end,
 -- })
 
+-- Hide git blame on lines with diagnostics
+local function has_diagnostics(lnum) return #vim.diagnostic.get(0, { lnum = lnum }) > 0 end
+
+vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI", "DiagnosticChanged" }, {
+  group = vim.api.nvim_create_augroup("BlameVsDiagnostics", { clear = true }),
+  callback = function()
+    local lnum = vim.api.nvim_win_get_cursor(0)[1] - 1
+    vim.g.gitblame_display_virtual_text = has_diagnostics(lnum) and 0 or 1
+  end,
+})
+
 -- Treesitter env variable
 vim.fn.setenv("CC", "clang")
