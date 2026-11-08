@@ -3,6 +3,7 @@ local prefix = "<Leader>M"
 ---@type LazySpec
 return {
   "zeybek/camouflage.nvim",
+  enabled = false,
   event = { "BufReadPre", "BufNewFile" },
   cmd = {
     "CamouflageToggle",
