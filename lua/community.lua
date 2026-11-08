@@ -111,6 +111,15 @@ return {
     "m4xshen/hardtime.nvim",
     opts = {
       disable_mouse = false,
+      disabled_keys = {
+        ["<Esc>"] = { "i" },
+      },
+      -- hints = {
+      --   ["<Esc>"] = {
+      --     message = function() return "Use jk instead of <Esc>" end,
+      --     length = 1,
+      --   },
+      -- },
     },
   },
   { import = "astrocommunity.workflow.precognition-nvim" },
