@@ -14,6 +14,7 @@ return {
         local mc = require "multicursor-nvim"
         opts.mappings = opts.mappings or {}
         local maps = opts.mappings
+        ---@cast maps -nil
 
         maps.n = maps.n or {}
         maps.x = maps.x or {}
