@@ -50,6 +50,7 @@ return {
   -- { import = "astrocommunity.editing-support.camouflage-nvim" },
   -- { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
   {
     "HiPhish/rainbow-delimiters.nvim",
