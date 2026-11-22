@@ -140,6 +140,7 @@
   "vim-move": { "branch": "master", "commit": "267fd1cff61fc643dfb5f9b188c434906f5214aa" },
   "vim-ps1": { "branch": "master", "commit": "8577ab0ba6bcbcda9d11ae40b2a09ddcb09aea42" },
   "vscode.nvim": { "branch": "main", "commit": "6439ed89d0e10193f07e92268a321d7c6f6e93ee" },
+  "wezterm-types": { "branch": "main", "commit": "1e6a0b7ac2206b197c741240743e981af37ce292" },
   "which-key.nvim": { "branch": "main", "commit": "fcbf4eea17cb299c02557d576f0d568878e354a4" },
   "zenbones.nvim": { "branch": "main", "commit": "8304d8df9b823ff11e103afa62f38c39f534abe6" }
 }
