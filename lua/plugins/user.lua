@@ -101,6 +101,9 @@ return {
       opts.indent = astrocore.extend_tbl(opts.indent, {
         enabled = false,
       })
+      -- opts.image = astrocore.extend_tbl(opts.image, {
+      --   enabled = false,
+      -- })
     end,
   },
 
